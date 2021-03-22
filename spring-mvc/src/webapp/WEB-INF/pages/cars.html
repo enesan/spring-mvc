@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Cars</title>
 </head>
 <body>
-
+<table border="1px">
+    <tr>
+        <td>Model</td><td>Speed</td><td>Weight</td>
+    </tr>
+    <tr th:each="car : ${carsList}">
+        <td th:text="${car.getModel()}"></td><td th:text="${car.getSpeed()}"></td><td th:text="${car.getWeight()}"></td>
+    </tr>
+</table>
 </body>
 </html>

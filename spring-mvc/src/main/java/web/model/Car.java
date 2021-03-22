@@ -11,4 +11,16 @@ public class Car {
         this.speed = speed;
         this.weight = weight;
     }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
 }
